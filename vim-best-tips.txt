@@ -1,5 +1,15 @@
 # vim-best-tips
 
+To reindent many files, the argument list can be used:
+
+:args *.c
+:argdo normal gg=G
+:wall
+
+Or use the buffer list (caution, every buffer will be affected):
+
+:bufdo normal gg=G
+:wall
 03-16-2018 15:06
 
 increment numbers visual-block
