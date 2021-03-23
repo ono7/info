@@ -62,14 +62,14 @@ https://github.com/tmux/tmux/wiki/Installing
 
 - need to install macos developer tools!
 
-```bash
-* Libevent
+```sh
+# Libevent
 tar zvxf libevent-*.tar.gz
 cd libevent-*/
 ./configure --prefix=$HOME/local --enable-shared
 make && make install
 
-* TMUX
+# TMUX
 
 # this works, but not sure how to do pass, --enable-static
 PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig ./configure --prefix=$HOME/local
