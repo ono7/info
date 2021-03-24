@@ -1,8 +1,10 @@
 = Contents =
   - [[#working with strings|working with strings]]
     - [[#working with strings#iterate over strings|iterate over strings]]
+    - [[#working with strings#string formatting|string formatting]]
     - [[#working with strings#matching patterns|matching patterns]]
       - [[#working with strings#matching patterns#page 104 (wow addons)|page 104 (wow addons)]]
+    - [[#working with strings#gsub|gsub]]
 
 = working with strings =
 
@@ -12,7 +14,8 @@
 
 {{{lua -- using string.byte might be faster for bigger sets
 
-for c in string.gmatch("sentence", ".") do print(c) end }}}
+for c in string.gmatch("sentence", ".") do print(c) end
+}}}
 
 * string.gmatch - is best when you are only interested in the matches.
 
@@ -60,7 +63,9 @@ for c in string.gmatch("sentence", ".") do print(c) end }}}
 
 * %c - control character '\n'
 
-* %b() - match between balanced parenthesis {{{lua
+* %b() - match between balanced parenthesis
+
+{{{lua
 
 string.format(“%%c: %c“, 83)            %c: S string.format(“%+d“, 17.0)
 +17 string.format(“%05d“, 17)               00017 string.format(“%o“, 17)
@@ -97,7 +102,9 @@ end
 }}}
 
 
-== string.gsub(s, pattern, repl [, n]) ==
+== gsub ==
+
+string.gsub(s, pattern, repl [, n])
 
 * repl can be a look up table, k,v pairs, or a function
 * lookups cannot return true/false
