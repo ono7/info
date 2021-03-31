@@ -1,3 +1,19 @@
+# youtube: CAPsMAN WiFi Layer 1 Optimisation
+
+https://www.youtube.com/watch?v=nCB4hL0f1VQ
+
+## setting up caps man
+
+**using l2 winbox**
+
+1. log in to each device and reset configuration to "no configuration"
+
+   system -> reset config -> no default config
+
+2. give system a name
+
+system -> identity
+
 # add filter to help with roaming
 
 ```bash
