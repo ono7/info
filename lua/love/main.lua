@@ -1,18 +1,8 @@
-local message = 0
-
-local testScores = {
-  95,
-  87,
-  98
-}
-table.insert(testScores, 1000)
-testScores.math = "hello there"
+local tbl = {}
+tbl.subject = "science"
+local message = "hello bubbah!!"
 
 function love.draw()
-  love.graphics.setFont(love.graphics.newFont(50))
-  for _, v in pairs(testScores) do
-    if type(v) ~= "number" then
-      love.graphics.print(v .. " awesome!")
-    end
-  end
+  love.graphics.setFont(love.graphics.newFont(40))
+  love.graphics.print(message .. " " .. tostring(tbl.subject))
 end

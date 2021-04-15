@@ -37,6 +37,7 @@ local message = 0
 local function increaseMe(num)
   message = message + num
 end
+tb.testScores = "science"
 
 for i = 1, 20 do
   increaseMe(i)

@@ -1,3 +1,9 @@
+= Contents =
+  - [[#functions|functions]]
+    - [[#functions#unpacking|unpacking]]
+      - [[#functions#unpacking#select|select]]
+      - [[#functions#unpacking#functionn signatures|functionn signatures]]
+
 = functions =
 
 
