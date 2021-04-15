@@ -12,9 +12,12 @@
 
 == iterate over strings ==
 
-{{{lua -- using string.byte might be faster for bigger sets
+{{{lua
+-- using string.byte might be faster for bigger sets
 
-for c in string.gmatch("sentence", ".") do print(c) end
+for c in string.gmatch("sentence", ".") do
+  print(c)
+end
 }}}
 
 * string.gmatch - is best when you are only interested in the matches.
