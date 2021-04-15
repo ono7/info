@@ -31,3 +31,14 @@ end
 for k, v in pairs(tb) do
   print(k, v.name)
 end
+
+local message = 0
+
+local function increaseMe(num)
+  message = message + num
+end
+
+for i = 1, 20 do
+  increaseMe(i)
+  print("message is -->" .. message)
+end
