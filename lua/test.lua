@@ -1,11 +1,11 @@
-tb = {}
+local tb = {}
 
 table.insert(tb, {name = "testb"})
 table.insert(tb, {name = "testd"})
 table.insert(tb, {name = "testc"})
 table.insert(tb, {name = "testa"})
 
-function sortName(a, b)
+local function sortName(a, b)
   return a.name < b.name
 end
 
@@ -28,3 +28,6 @@ end
   >
 
 --]]
+for k, v in pairs(tb) do
+  print(k, v.name)
+end
