@@ -180,7 +180,7 @@ lua test.lua
 - this is needed for kali linux lua lsp support
 
   sudo luarocks install dkjson
-  sudo luarocks install lua-lsp
+  sudo luarocks install lua-lsp luacheck
 
 ## lua reference
 
