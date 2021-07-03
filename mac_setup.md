@@ -85,3 +85,7 @@ make && make install # or copy tmux to ~/local/bin/tmux
 # store kerberos creds in key chain
 
 kinit --keychain
+
+# ctags
+
+https://github.com/universal-ctags/ctags
