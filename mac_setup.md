@@ -88,4 +88,5 @@ kinit --keychain
 
 # ctags
 
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 https://github.com/universal-ctags/ctags
